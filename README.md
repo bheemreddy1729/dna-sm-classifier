@@ -2,6 +2,11 @@
 
 This repository contains open-source, in-tenant workflows for suggesting five product master-data labels without external LLM or API calls.
 
+> **Project Tracking & Registry**:
+> - [MODEL_CARD.md](./MODEL_CARD.md) — Single source of truth for the ML lifecycle stages, version comparison cards, and operational checklists.
+> - [FEATURE_LOG.md](./FEATURE_LOG.md) — Detailed feature decision register, pipeline treatment, and data leakage guards.
+> - Jira Epic / Tasks: [LBVOICESER-1516](https://laerdal.atlassian.net/browse/LBVOICESER-1516), [LBVOICESER-1564](https://laerdal.atlassian.net/browse/LBVOICESER-1564), [LBVOICESER-1567](https://laerdal.atlassian.net/browse/LBVOICESER-1567).
+
 ## Random Forest Application
 
 The Random Forest workflow predicts labels from three inputs:
@@ -37,7 +42,6 @@ A controlled paired benchmark compares Random Forest with the local MiniLM cosin
 ├── evaluation/                             # Paired benchmark, results, and report
 ├── test_sets/                              # Exact held-out rows for each target
 ├── product_classification_rf_3features_proba.ipynb
-├── product_type_classification_rf_3features_proba.ipynb
 ├── semarchy_example_product 1.ipynb
 ├── streamlit_app.py
 ├── requirements.txt
